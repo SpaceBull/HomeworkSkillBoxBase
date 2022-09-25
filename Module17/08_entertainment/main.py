@@ -1,7 +1,23 @@
+import random
 
-roster = [[[1, 2, 3], [4, 5, 6], [7, 8, 9]], [[10, 11, 12], [13, 14, 15], [16, 17, 18]]]
-answer = [number for half in roster for fraction in half for number in fraction]
-print(answer)
+number_of_sticks = int(input('Количество палок: '))
+sticks = ['|' for _ in range(number_of_sticks)]
+number_of_throws = int(input('Количество бросков: '))
+initial_number = 1
+
+for cast in range(number_of_throws):
+    left_border = random.randint(initial_number, number_of_sticks)
+    right_border = random.randint(left_border, number_of_sticks)
+    difference = right_border + 1 - left_border
+    sticks[left_border - 1: right_border] = '.' * difference
+    if right_border < number_of_sticks:
+        initial_number = right_border
+    elif right_border == number_of_sticks:
+        initial_number = 1
+        left_border = right_border
+    print(f'Бросок {cast + 1}. Сбиты палки с номера {left_border} по номер {right_border}.')
+
+print(f'Результат: {sticks}')
 
 
 
