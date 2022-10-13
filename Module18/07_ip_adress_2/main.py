@@ -1,20 +1,17 @@
-first_line = input('Первая строка: ')
-second_line = input('Вторая строка: ')
-count_letter = len(first_line)
-shift = 0
+text = input('Сообщение: ').split()
+new_text = []
+for word in text:
+    if not word.isalpha():
+        symbol = word[len(word) - 1]
+        copy_symbol = symbol
+        temp_word = [letter for letter in word]
+        temp_word.remove(symbol)
+        temp_word = temp_word[::-1]
+        temp_word.insert(len(word) - 1, copy_symbol)
+        word = ''.join(temp_word)
+        new_text.append(word)
+    else:
+        new_text.append(word[::-1])
 
-first_roster = [letter for letter in first_line]
-second_roster = [letter for letter in second_line]
-
-while count_letter != 0:
-    shift += 1
-    letter = second_roster[len(second_roster) - 1]
-    copy_letter = letter
-    second_roster.remove(letter)
-    second_roster.insert(0, copy_letter)
-    count_letter -= 1
-    if second_roster == first_roster:
-        print(f'Первая строка получается из второй со сдвигом {shift}.')
-        break
-    if count_letter == 0:
-        print('Первую строку нельзя получить из второй с помощью циклического сдвига.')
+answer = ' '.join(new_text)
+print(f'Новое сообщение: {answer}')
