@@ -25,5 +25,4 @@ for number in range(1, number_of_songs + 1):
     song = input(f'Название {number_text[number]} песни: ')
     answer += violator_songs[song]
 
-
 print(f'Общее время звучания песен: {answer} минуты')
