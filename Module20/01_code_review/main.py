@@ -20,25 +20,24 @@ students = {
 }
 
 
-def f(dict):
-    lst = []
-    string = ''
-    for i in dict:
-        lst += (dict[i]['interests'])
-        string += dict[i]['surname']
-    cnt = 0
-    for s in string:
-        cnt += 1
-    return lst, cnt
+def writes_out_interests(roster_students):
+    new_roster_interests = []
+    surnames = ''
+    for student_id in roster_students:
+        surnames += roster_students[student_id]['surname']
+        new_roster_interests += (roster_students[student_id]['interests'])
+    count_letter = len(surnames)
+    new_roster_interests = set(new_roster_interests)
+    return count_letter, new_roster_interests
 
 
 pairs = []
-for i in students:
-    pairs += (i, students[i]['age'])
+for id_student in students:
+    pairs.append((id_student, students[id_student]['age']))
 
+the_number_of_letters_in_the_surname = writes_out_interests(students)[0]
+new_roster = writes_out_interests(students)[1]
 
-my_lst = f(students)[0]
-l = f(students)[1]
-print(my_lst, l)
-
-# TODO исправить код
+print(f'Список пар "ID студента — возраст": {pairs}')
+print(f'Полный список интересов всех студентов: {new_roster}')
+print(f'Общая длина всех фамилий студентов: {the_number_of_letters_in_the_surname}')
