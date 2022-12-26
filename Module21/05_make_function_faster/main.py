@@ -15,4 +15,3 @@ while True:
     finish_number = int(input('Введите конечное число: '))
     answer = calculating_math_func(first_number, finish_number)
     print(answer)
-    
