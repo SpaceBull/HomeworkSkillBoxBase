@@ -1,3 +1,4 @@
+
 first_rank = list(range(160, 176 + 1, 2))
 second_rank = list(range(162, 180 + 1, 3))
 

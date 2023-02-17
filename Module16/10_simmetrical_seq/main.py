@@ -1,6 +1,7 @@
 numbers = int(input('Кол-во чисел: '))
 roster = []
 new_roster = []
+
 for _ in range(numbers):
     number = int(input('Введите число: '))
     roster.append(number)

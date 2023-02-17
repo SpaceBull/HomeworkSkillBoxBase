@@ -15,8 +15,3 @@ first_number = int(input('Введите первый год: '))
 second_number = int(input('Введите второй год: '))
 print(f'Года от {first_number} до {second_number} с тремя одинаковыми цифрами:')
 count_special_dates(first_number, second_number)
-
-# def count_special_dates(a, b):
-# for year in range(a, b + 1):
-# for symbol in str(year): #Изначально мыслил в эту сторону, но присваивая
-# symbol - 0 ,то year не делит на symbol (так как на ноль делить нельзя)

@@ -1,3 +1,4 @@
+
 def check_coordinates(x, y, radius):
     coordinate_x = 0.0
     coordinate_y = 0.0

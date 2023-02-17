@@ -1,3 +1,4 @@
+
 def find_the_smallest_divisor(num):
     temp = 1
     for iteration in range(1, num + 1):

@@ -24,6 +24,7 @@ for i_debt in range(debt_receipts):
 
 print('Баланс друзей: ')
 count = 1
+
 for i_many in range(1, len(friend_summ) + 1, 2):
     print(f'{count}: {friend_summ[i_many]}')
     count += 1

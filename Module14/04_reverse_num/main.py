@@ -1,3 +1,4 @@
+
 def separate_the_number(number):
   temp = str(number)
   order = ''

@@ -2,6 +2,7 @@ first_numbers = []
 second_numbers = []
 new_roster = []
 index = 0
+
 for i_number in range(1, 4):
     number_one = int(input(f'Введите {i_number}-е число для первого списка: '))
     first_numbers.append(number_one)

@@ -1,11 +1,13 @@
 number_of_skates = int(input('Кол-во коньков: '))
 skates = []
+
 for couple in range(number_of_skates):
     pair_size = int(input(f'Размер {couple + 1}-й пары: '))
     skates.append(pair_size)
 
 number_of_people = int(input('Кол-во людей: '))
 foot_sizes = []
+
 for people in range(number_of_people):
     size = int(input(f'Размер ноги {people + 1}-го человека: '))
     foot_sizes.append(size)

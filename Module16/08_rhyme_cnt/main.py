@@ -1,3 +1,4 @@
+
 number_of_people = int(input('Введите кол-во людей: '))
 count_people = int(input('Какое число в считалке? '))
 roster_people = list(range(1, number_of_people + 1))

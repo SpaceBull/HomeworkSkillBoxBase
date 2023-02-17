@@ -19,6 +19,7 @@ for number in range(1, number_of_songs + 1):
         if i_song[0] == song:
             time_song += i_song[1]
 
+
 time_song = (round(time_song, 2))
 print(f'Общее время звучания песен: {time_song} минуты')
 

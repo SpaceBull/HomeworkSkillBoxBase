@@ -1,4 +1,3 @@
-
 print("Введите первую точку")
 x1 = float(input('X: '))
 y1 = float(input('Y: '))
