@@ -18,7 +18,7 @@ def logging(func: Callable) -> Any:
                                                                                           temp=str(temp),
                                                                                           datetime_now=datetime_now))
         file.close()
-        return file
+        return temp
     return wrapped_func
 
 
