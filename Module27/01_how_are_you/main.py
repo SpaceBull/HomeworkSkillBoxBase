@@ -8,7 +8,7 @@ def how_are_you(func: Callable) -> Callable:
     """
     @functools.wraps(func)
     def wrapped_question() -> Any:
-        input('Как дела? ')
+        _ = input('Как дела? ')
         print('А у меня не очень! Ладно, держи свою функцию.')
         return func()
     return wrapped_question

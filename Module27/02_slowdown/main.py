@@ -11,6 +11,7 @@ def timer(my_func: Callable) -> Any:
     def wrapped_func(*args, **kwargs):
         threading.Timer(5.0, header).start()
         my_func(*args, **kwargs)
+        return my_func
     return wrapped_func
 
 
