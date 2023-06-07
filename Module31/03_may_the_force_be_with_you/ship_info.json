@@ -1,0 +1,35 @@
+{
+    "название": "Millennium Falcon",
+    "максимальная скорость": "1050",
+    "класс": "Light freighter",
+    "список пилотов": [
+        {
+            "имя": "Chewbacca",
+            "рост": "228",
+            "вес": "112",
+            "родная планета": "https://swapi.dev/api/planets/14/",
+            "ссылка на информацию о родной планете": "https://swapi.dev/api/planets/14/"
+        },
+        {
+            "имя": "Han Solo",
+            "рост": "180",
+            "вес": "80",
+            "родная планета": "https://swapi.dev/api/planets/22/",
+            "ссылка на информацию о родной планете": "https://swapi.dev/api/planets/22/"
+        },
+        {
+            "имя": "Lando Calrissian",
+            "рост": "177",
+            "вес": "79",
+            "родная планета": "https://swapi.dev/api/planets/30/",
+            "ссылка на информацию о родной планете": "https://swapi.dev/api/planets/30/"
+        },
+        {
+            "имя": "Nien Nunb",
+            "рост": "160",
+            "вес": "68",
+            "родная планета": "https://swapi.dev/api/planets/33/",
+            "ссылка на информацию о родной планете": "https://swapi.dev/api/planets/33/"
+        }
+    ]
+}
